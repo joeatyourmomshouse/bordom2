@@ -9,8 +9,8 @@ if (a === true) {
     var riddle = prompt("You are given the code 54FDA. NO CAPS");
 
     if (riddle && riddle.toLowerCase() === "great") {
-        alert("CONGRATULATIONS, you passed part one...");
-        alert("of the game of boredom...");
-        alert("Feel free to boast as much as you like to your friends.");
+        alert("CONGRATULATIONS, you beat the game of boredom ");
+        new Audio('audiomass-output.mp3').play();
+
     }
 }

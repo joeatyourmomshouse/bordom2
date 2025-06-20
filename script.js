@@ -1,6 +1,5 @@
 // Show initial welcome alerts
-alert("WELCOME TO THE GAME CREATED BY BORDOM ITSELF... volume up");
-alert("Creator: Virat Priya");
+alert("WELCOME TO THE GAME CREATED BY BORDOM ITSELF... volume up word of the day: realkey");
 
 // Function to play sound and then show alert
 function playSoundAndAlert(callback) {
@@ -10,7 +9,7 @@ function playSoundAndAlert(callback) {
     audio.addEventListener('canplaythrough', function () {
         audio.play().then(() => {
             setTimeout(() => {
-             prompt("THE GAME OF BORDOM, press ok to start"); 
+             alert("THE GAME OF BORDOM   ///Creator: Virat Priya///   press ok to start"); 
                 callback();
             }, 500); // Short delay to allow audio to start
         }).catch(error => {
@@ -31,7 +30,7 @@ function playSoundAndAlert(callback) {
 
 // Call the function and start the game after sound
 playSoundAndAlert(() => {
-    var ask = alert("Are you ready to begin the challenge?");
+    var ask = confirm("Are you ready to begin the challenge?");
 
     if (ask === true) {
         alert("This game consists of multiple little tests that teach you, or not, important knoledge.");
