@@ -31,7 +31,7 @@ function playSoundAndAlert(callback) {
 
 // Call the function and start the game after sound
 playSoundAndAlert(() => {
-    var ask = confirm("Are you ready to begin the challenge?");
+    var ask = alert("Are you ready to begin the challenge?");
 
     if (ask === true) {
         alert("This game consists of multiple little tests that teach you, or not, important knoledge.");
@@ -47,7 +47,7 @@ playSoundAndAlert(() => {
                 window.close();
                 break;
             } else if (key === realkey) {
-                alert("Welcome! You have finally overcome the 1st stage");
+                alert("Welcome! You have finally overcome the 1st part");
                 success = true;
             } else {
                 alert("Wrong key! hint: the day of the word");
