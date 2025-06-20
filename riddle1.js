@@ -1,11 +1,16 @@
-alert("next step: learn something called one time pad");
+alert("Next step: learn something called One Time Pad");
 alert("https://www.youtube.com/watch?v=BGAY8vMyTAA");
+
 var a = confirm("You done?");
-if(a == true){
-    alert("great, you can move on to the second test.")
-    alert("what is the real word if...");
-var  riddle = prompt("you are given the code 54FDA ? NO CAPS");
-}
-if(riddle == great){
-alert("CONGRADULATIONS, you passed part one, of the game of bordom. Feel free to boast as much as you like to your freinds.");
+if (a === true) {
+    alert("Great, you can move on to the second test.");
+    alert("What is the real word if...");
+
+    var riddle = prompt("You are given the code 54FDA. NO CAPS");
+
+    if (riddle && riddle.toLowerCase() === "great") {
+        alert("CONGRATULATIONS, you passed part one...");
+        alert("of the game of boredom...");
+        alert("Feel free to boast as much as you like to your friends.");
+    }
 }
