@@ -1,35 +1,6 @@
 // Show initial welcome alerts
-alert("WELCOME TO THE GAME CREATED BY BORDOM ITSELF... volume up word of the day: realkey");
-
-// Function to play sound and then show alert
-function playSoundAndAlert(callback) {
-    var audio = new Audio("audiomass-output.mp3");
-
-    // Wait for audio to be ready to play
-    audio.addEventListener('canplaythrough', function () {
-        audio.play().then(() => {
-            setTimeout(() => {
-             alert("THE GAME OF BORDOM   ///Creator: Virat Priya///   press ok to start"); 
-                callback();
-            }, 500); // Short delay to allow audio to start
-        }).catch(error => {
-            console.error("Failed to play audio:", error);
-            alert("Hello! (Sound didn't play)");
-            callback();
-        });
-    });
-                
-
-    // Handle audio loading error
-    audio.addEventListener('error', function () {
-        console.error("Audio file couldn't load.");
-        alert("Hello! (Audio file failed to load)");
-        callback();
-    });
-}
-
-// Call the function and start the game after sound
-playSoundAndAlert(() => {
+alert("WELCOME TO THE GAME CREATED BY BORDOM ITSELF... /n word of the day: realkey");
+ {
     var ask = confirm("Are you ready to begin the challenge?");
 
     if (ask === true) {
@@ -57,4 +28,4 @@ playSoundAndAlert(() => {
         alert("Guess not... closing the window now.");
         window.close();
     }
-});
+};
