@@ -1,5 +1,5 @@
 // Show initial welcome alerts
-alert("WELCOME TO THE GAME CREATED BY BORDOM ITSELF... /n word of the day: realkey");
+alert("WELCOME TO THE GAME CREATED BY BOREDOM ITSELF...\nword of the day: realkey");
  {
     var ask = confirm("Are you ready to begin the challenge?");
 
